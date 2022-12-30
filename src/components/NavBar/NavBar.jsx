@@ -6,6 +6,7 @@ import { AiFillPhone } from "react-icons/ai";
 import { FiMail } from "react-icons/fi";
 import logo from "../../images/logo 0.png";
 import "./NavBar.css";
+import { HOME_ROUTE, COMPETITIONS_ROUTE } from '../../const.js';
 
 export const NavBar = () => {
   const [isDesktop] = useState(window.innerWidth > 700);
@@ -17,7 +18,7 @@ export const NavBar = () => {
           className="nav-header"
           style={{ paddingRight: isDesktop ? "30px" : "1px" }}
         >
-          <NavLink to="/">
+          <NavLink to={HOME_ROUTE}>
             <img src={logo} alt="ArtForSmart" />
           </NavLink>
         </div>
@@ -27,7 +28,7 @@ export const NavBar = () => {
         >
           <li>
             <NavLink
-              to="/home"
+              to={HOME_ROUTE}
               className="nav-links__item-link"
               activeClassName="nav-links__item-link--active"
             >
@@ -36,7 +37,7 @@ export const NavBar = () => {
           </li>
           <li>
             <NavLink
-              to="/competitions"
+              to={COMPETITIONS_ROUTE}
               className="nav-links__item-link"
               activeClassName="nav-links__item-link--active"
             >

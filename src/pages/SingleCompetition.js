@@ -5,6 +5,7 @@ import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { RoomContext } from "../context";
 import StyledHero from "../components/StyledHero";
+import { COMPETITIONS_ROUTE, HOME_ROUTE } from "../const";
 
 
 
@@ -26,7 +27,7 @@ export default class SingleCompetition extends Component {
       return (
         <div className="error">
           <h3> no such competitions could be found...</h3>
-          <Link to="/competitions" className="btn-primary">
+          <Link to={COMPETITIONS_ROUTE} className="btn-primary">
             back to all competitions
           </Link>
         </div>
@@ -43,7 +44,7 @@ export default class SingleCompetition extends Component {
       <>
         <StyledHero img={images[0] || this.state.defaultBcg}>
           <Banner title={`Конкурс ${name}`}>
-            <Link to="/" className="btn-primary">
+            <Link to={HOME_ROUTE} className="btn-primary">
               Вернуться на главную
             </Link>
 
