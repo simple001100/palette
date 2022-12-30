@@ -2,7 +2,7 @@
   "name": "0.2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://simple001100.github.io/palette/",
+  "homepage": "https://simple001100.github.io/",
   "dependencies": {
     "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
