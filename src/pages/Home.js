@@ -13,7 +13,6 @@ import { OrgCommittee } from "../components/OrgCommittee/OrgCommittee";
 import { VideoPlayer } from '../components/VideoPlayer';
 import { CarouselPhoto } from '../components/CarouselPhoto';
 import { result } from '../data/index';
-import { COMPETITIONS_ROUTE } from "../const";
 
 const home = () => {
   return (
@@ -26,7 +25,7 @@ const home = () => {
         >
           <TimerCon />
 
-          <Link to={COMPETITIONS_ROUTE} className="btn-primary">
+          <Link to="/competitions" className="btn-primary">
             галерея
           </Link>
         </Banner>
