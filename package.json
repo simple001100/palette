@@ -2,9 +2,11 @@
   "name": "0.2",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://simple001100.github.io/palette/",
   "dependencies": {
     "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
+    "caniuse-lite": "^1.0.30001441",
     "history": "^5.0.0",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
